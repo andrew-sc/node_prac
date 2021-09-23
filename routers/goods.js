@@ -1,5 +1,5 @@
 const express = require("express");
-const Goods = require("../schemas/Goods");
+const Goods = require("../schemas/goods");
 const Cart = require("../schemas/cart");
 
 const router = express.Router();
