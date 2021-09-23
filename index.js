@@ -61,6 +61,10 @@ app.get('/cart', (req, res) => {
   res.render('cart');
 })
 
+app.get('/order', (req, res) => {
+  res.render('order');
+})
+
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`)
 });
