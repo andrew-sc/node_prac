@@ -1,10 +1,10 @@
-const mongoose = require("mongoose");
-
-const connect = () => {
+const mongoose = require("mongoose");const connect = () => {
   mongoose
-    .connect("mongodb://localhost:27017/voyage", {
+    .connect("mongodb://localhost:27017/admin", {
       useNewUrlParser: true,
-      ignoreUndefined: true
+      ignoreUndefined: true,
+      user: "test",
+      pass: "test"
     })
     .catch(err => console.log(err));
 };
